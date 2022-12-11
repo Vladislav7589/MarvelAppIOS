@@ -11,14 +11,21 @@
 		F7203D932945FACE001548B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7203D922945FACE001548B8 /* ContentView.swift */; };
 		F7203D952945FACF001548B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7203D942945FACF001548B8 /* Assets.xcassets */; };
 		F7203D982945FACF001548B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7203D972945FACF001548B8 /* Preview Assets.xcassets */; };
+		F7203D9F2946268C001548B8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7203D9E2946268C001548B8 /* Colors.swift */; };
+		F7203DA2294640C3001548B8 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = F7203DA1294640C3001548B8 /* ACarousel */; };
+		F7203DA5294689FC001548B8 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7203DA4294689FC001548B8 /* model.swift */; };
+		F7203DA829468A54001548B8 /* DrawTiangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7203DA729468A54001548B8 /* DrawTiangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7203D8D2945FACE001548B8 /* MarvelAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7203D902945FACE001548B8 /* MarvelAppIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppIOSApp.swift; sourceTree = "<group>"; };
-		F7203D922945FACE001548B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7203D922945FACE001548B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		F7203D942945FACF001548B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7203D972945FACF001548B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7203D9E2946268C001548B8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F7203DA4294689FC001548B8 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		F7203DA729468A54001548B8 /* DrawTiangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTiangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7203DA2294640C3001548B8 /* ACarousel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +59,10 @@
 		F7203D8F2945FACE001548B8 /* MarvelAppIOS */ = {
 			isa = PBXGroup;
 			children = (
+				F7203DA629468A37001548B8 /* Utils */,
+				F7203DA3294689CA001548B8 /* Model */,
 				F7203D902945FACE001548B8 /* MarvelAppIOSApp.swift */,
+				F7203D9E2946268C001548B8 /* Colors.swift */,
 				F7203D922945FACE001548B8 /* ContentView.swift */,
 				F7203D942945FACF001548B8 /* Assets.xcassets */,
 				F7203D962945FACF001548B8 /* Preview Content */,
@@ -65,6 +76,22 @@
 				F7203D972945FACF001548B8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7203DA3294689CA001548B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7203DA4294689FC001548B8 /* model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7203DA629468A37001548B8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F7203DA729468A54001548B8 /* DrawTiangle.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = MarvelAppIOS;
+			packageProductDependencies = (
+				F7203DA1294640C3001548B8 /* ACarousel */,
+			);
 			productName = MarvelAppIOS;
 			productReference = F7203D8D2945FACE001548B8 /* MarvelAppIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = F7203D842945FACD001548B8;
+			packageReferences = (
+				F7203DA0294640C3001548B8 /* XCRemoteSwiftPackageReference "ACarousel" */,
+			);
 			productRefGroup = F7203D8E2945FACE001548B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7203D932945FACE001548B8 /* ContentView.swift in Sources */,
+				F7203D9F2946268C001548B8 /* Colors.swift in Sources */,
+				F7203DA829468A54001548B8 /* DrawTiangle.swift in Sources */,
 				F7203D912945FACE001548B8 /* MarvelAppIOSApp.swift in Sources */,
+				F7203DA5294689FC001548B8 /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7203DA0294640C3001548B8 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7203DA1294640C3001548B8 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7203DA0294640C3001548B8 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F7203D852945FACD001548B8 /* Project object */;
 }
